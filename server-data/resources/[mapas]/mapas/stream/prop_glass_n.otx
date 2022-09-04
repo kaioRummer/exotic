@@ -1,0 +1,10 @@
+Version 13 30
+{
+	Image prop_glass_n.dds
+	Type Regular
+	PixelFormat DXT1
+	Levels 6
+	Usage NORMAL
+	UsageFlags -
+	ExtraFlags 0
+}

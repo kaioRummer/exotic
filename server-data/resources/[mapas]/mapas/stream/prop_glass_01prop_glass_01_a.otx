@@ -1,0 +1,10 @@
+Version 13 30
+{
+	Image prop_glass_01prop_glass_01_a.dds
+	Type Regular
+	PixelFormat DXT5
+	Levels 5
+	Usage DIFFUSE
+	UsageFlags -
+	ExtraFlags 0
+}

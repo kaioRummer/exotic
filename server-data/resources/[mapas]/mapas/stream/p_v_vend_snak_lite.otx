@@ -1,0 +1,10 @@
+Version 13 30
+{
+	Image p_v_vend_snak_lite.dds
+	Type Regular
+	PixelFormat DXT1
+	Levels 4
+	Usage DIFFUSE
+	UsageFlags -
+	ExtraFlags 0
+}

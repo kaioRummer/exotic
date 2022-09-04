@@ -1,0 +1,8 @@
+{
+  "checks": { "item": false, "permission": true },
+  "item": "tablet",
+  "distance_volume": 100.0,
+  "permissions": ["player.som","admin.permissao"],
+  "command": "som",
+  "keybind":"End"
+}
