@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Nation Group Management</title>
+   <script src="lang.js"></script>
+   <script src="sweetalert2.js"></script>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <div class="left-container">
+         <div class="top-header header-left">
+            <div class="search-bar">
+               <i class="fas fa-search"></i>
+               <input type="number"  id="id" class="input">
+            </div>
+         </div>
+         <div class="info-display">
+            <div class="info-container">
+               <div class="info pass"></div>
+               <div class="info nome"></div>
+               <div class="info phone"></div>
+               <div class="info age"></div>
+               <div class="info rg"></div>
+            </div>
+            <button class="btn admitir" onclick="managePlayer('recruit')"></button>
+         </div>
+         <div class="lds-roller info-loading"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+         <div class="id-not-found-display">
+            <div class="id-not-found"></div>
+         </div>
+      </div>
+      <div class="right-container">
+         <div class="top-header">
+            <div class="org-title"></div>
+         </div>
+         <div class="themeContainer">
+            <div class="theme" onclick="changeTheme()">
+               <div class="themeButton">
+                  <i class="far fa-lightbulb"></i>
+               </div>
+            </div>
+         </div>
+         <div class="org-display">
+            <div class="arrows">
+               <i class="fas fa-caret-down left" onclick="sortOrgList('user_id')"></i>
+               <i class="fas fa-caret-down" onclick="sortOrgList('groupIndex')"></i>
+               <i class="fas fa-caret-down right" onclick="sortOrgList('service')"></i>
+            </div>
+            <div class="org-container"></div>
+            <button class="btn promover" onclick="managePlayer('promove')"></button>
+            <button class="btn rebaixar" onclick="managePlayer('demote')"></button>
+            <button class="btn demitir" onclick="managePlayer('dismiss')"></button>
+         </div>
+         <div class="lds-roller org-loading"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+   </div>
+    <script src="script.js"></script>
+    <script>
+       $(".pass").html(lang.pass+`: <span id="pass"></span>`);
+       $(".nome").html(lang.name+`: <span class="name"></span><div class="full-name"></div>`);
+       $(".phone").html(lang.phone+`: <span id="phone"></span>`);
+       $(".age").html(lang.age+`: <span id="age"></span><span>`+lang.yearsOld+`</span>`);
+       $(".rg").html(lang.rg+`: <span id="rg"></span>`);
+       $(".admitir").html(lang.recruit);
+       $(".promover").html(lang.promote);
+       $(".rebaixar").html(lang.demote);
+       $(".demitir").html(lang.dismiss);
+       $(".id-not-found").html(`<i class="fas fa-exclamation-triangle"></i></div><p>`+lang.idNotFound+`</p>`);
+    </script>
+</body>
+</html>
