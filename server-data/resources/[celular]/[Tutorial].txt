@@ -1,0 +1,21 @@
+Salve rapaziada aqui quem fala é o Haxshw#1918, vou apresentar
+um tutorial bem breve paara o celular de vocês funcionarem.
+
+Primeiro passo > deletem todos os arquivos do seu celular antigo
+como: arquivos da sua resources, gcphone, etc e Retirar do .cfg.
+
+Segundo passo > Startem o celular de vc na sua pasta resources,
+depois coloquem eles no seu .cfg, exemplo:
+
+ensure smartphone
+ensure smartphone-jobs
+ensure screenshot-basic
+ensure webpack
+ensure yarn
+
+Terceiro passo > colocar os arquivos da pasta [xampp] em > C:\xampp\htdocs
+instalar o node.js, abrir as portass 8080 TCP e executar o (Start.bat) da
+pasta Chamada_de_Video.
+
+COM ISSO SEU CELULAR ESTARA FUNCIONANDO TUDO, SE TIVER ALGUMA
+DÚVIDA VER O VÍDEO > https://www.youtube.com/watch?v=l42W0A7EP3Y
