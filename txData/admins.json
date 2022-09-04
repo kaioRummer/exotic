@@ -1,0 +1,21 @@
+[
+  {
+    "name": "DevIgorWinchester",
+    "master": true,
+    "password_hash": "$2a$11$tChzcH.wOvmz5z7DNXFLOePvtihHCCRGSp7qW3If5b5Q068mPosvO",
+    "providers": {
+      "citizenfx": {
+        "id": "DevIgorWinchester",
+        "identifier": "fivem:4031978",
+        "data": {
+          "sub": "64db6de7831391c8ae42ff5c6ea1427a",
+          "nameid": "https://forum.cfx.re/internal/user/4031978",
+          "name": "DevIgorWinchester",
+          "picture": "https://forum.cfx.re/user_avatar/forum.cfx.re/devigorwinchester/256/694261_2.png",
+          "profile": "https://forum.cfx.re/u/DevIgorWinchester"
+        }
+      }
+    },
+    "permissions": []
+  }
+]

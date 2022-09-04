@@ -1,0 +1,68 @@
+
+================================================================
+======== txAdmin starting - 8/26/2021, 10:48:27 PM
+================================================================
+
+================================================================
+======== txAdmin starting - 8/26/2021, 10:52:41 PM
+================================================================
+
+================================================================
+======== txAdmin starting - 8/26/2021, 10:53:50 PM
+================================================================
+
+================================================================
+======== txAdmin starting - 8/26/2021, 10:54:03 PM
+================================================================
+
+================================================================
+======== txAdmin starting - 8/26/2021, 10:56:21 PM
+================================================================
+
+================================================================
+======== txAdmin starting - 8/26/2021, 10:59:21 PM
+================================================================
+
+================================================================
+======== txAdmin starting - 8/27/2021, 10:04:12 AM
+================================================================
+
+================================================================
+======== txAdmin starting - 8/27/2021, 10:11:35 AM
+================================================================
+[10:14:11][191.96.78.137][DevIgorWinchester] Changing global/fxserver settings via setup stepper.
+[10:15:11][MONITOR] Restarting server (server close detected).
+[10:16:21][MONITOR] Restarting server (server close detected).
+
+================================================================
+======== txAdmin starting - 8/27/2021, 10:18:16 AM
+================================================================
+[10:18:42][191.96.78.137][DevIgorWinchester] RESTART SERVER
+[10:28:57][191.96.78.137][DevIgorWinchester] ensure "vrp_player"
+[10:31:45][191.96.78.137][DevIgorWinchester] STOP SERVER
+[10:31:45][191.96.78.137][DevIgorWinchester] Resetting fxRunner settings.
+
+================================================================
+======== txAdmin starting - 8/27/2021, 10:32:49 AM
+================================================================
+[10:34:53][191.96.78.137][DevIgorWinchester] Changing global/fxserver settings via setup stepper.
+[10:43:30][191.96.78.137][DevIgorWinchester] RESTART SERVER
+[10:53:16][191.96.78.137][DevIgorWinchester] RESTART SERVER
+[11:14:43][191.96.78.137][DevIgorWinchester] RESTART SERVER
+[11:21:59][191.96.78.137][DevIgorWinchester] RESTART SERVER
+[11:22:19][191.96.78.137][DevIgorWinchester] RESTART SERVER
+[11:22:46][191.96.78.137][DevIgorWinchester] RESTART SERVER
+[11:53:12][191.96.78.137][DevIgorWinchester] ensure "vrp_legacyfuel"
+[11:54:09][191.96.78.137][DevIgorWinchester] ensure "vrp_legacyfuel"
+[11:59:05][191.96.78.137][DevIgorWinchester] ensure "vrp_legacyfuel"
+[12:02:27][191.96.78.137][DevIgorWinchester] RESTART SERVER
+[12:03:33][191.96.78.137][DevIgorWinchester] RESTART SERVER
+[12:48:47][191.96.78.137][DevIgorWinchester] RESTART SERVER
+[12:52:15][191.96.78.137][DevIgorWinchester] Changing global settings.
+[12:52:25][191.96.78.137][DevIgorWinchester] RESTART SERVER
+[12:56:37][191.96.78.137][DevIgorWinchester] RESTART SERVER
+[13:02:16][191.96.78.137][DevIgorWinchester] RESTART SERVER
+[13:17:20][191.96.78.137][DevIgorWinchester] RESTART SERVER
+[13:19:23][191.96.78.137][DevIgorWinchester] RESTART SERVER
+[13:20:06][191.96.78.137][DevIgorWinchester] RESTART SERVER
+[13:23:35][191.96.78.137][DevIgorWinchester] RESTART SERVER
