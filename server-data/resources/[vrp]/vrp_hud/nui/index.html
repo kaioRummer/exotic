@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="body">
+        <div class="informations">
+            <div class="containers">
+                <div class="hours">
+                    <div class="hours_icon">
+                        <img src="https://cdn.discordapp.com/attachments/840446706697109534/840446797453590538/clock_icon.png" alt="">
+                    </div>
+                    <span class="hours_value">00:00</span>
+                </div>
+                <div class="street_name">
+                    <div class="street_name_icon">
+                        <img src="https://cdn.discordapp.com/attachments/840446706697109534/840446791237369866/map_icon.png">
+                    </div>
+                    <span class="street_name_value">New Empire Way</span>
+                </div>
+            </div>
+        </div>
+        <div class="player_hud">
+            <div class="containers">
+                <div class="health">
+                    <div class="health_bar">
+                        <div class="health_value_background">
+                            <div class="health_value"></div>
+                        </div>
+                    </div>
+                    <div class="health_icon">
+                        <img src="https://cdn.discordapp.com/attachments/840446706697109534/840446788069883924/heart_icon.png" alt="">
+                    </div>
+                </div>
+                <div class="armour">
+                    <div class="armour_bar">
+                        <div class="armour_value_background">
+                            <div class="armour_value"></div>
+                        </div>
+                    </div>
+                    <div class="armour_icon">
+                        <img src="https://cdn.discordapp.com/attachments/840446706697109534/840446792550318150/amour_icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="player_velocimeter" style="display: none;">
+            <svg class="background" viewBox="-4793.401 -97 200.4 202">
+                <path id="background"
+                    d="M -4694 105.0005722045898 C -4703.24658203125 105.0005722045898 -4712.4072265625 103.7513275146484 -4721.228515625 101.2875289916992 C -4729.77880859375 98.89925384521484 -4737.99169921875 95.37722778320313 -4745.63818359375 90.81919860839844 C -4760.75341796875 81.80922698974609 -4773.31982421875 68.95369720458984 -4781.97802734375 53.64242553710938 C -4777.1318359375 51.32990264892578 -4774.0009765625 46.36792755126953 -4774.0009765625 40.99980163574219 C -4774.0009765625 33.28000259399414 -4780.28076171875 26.9995002746582 -4788 26.9995002746582 C -4789.43896484375 26.9995002746582 -4790.85791015625 27.21692657470703 -4792.21630859375 27.64575004577637 C -4792.50634765625 26.43787574768066 -4792.77587890625 25.21177673339844 -4793.01953125 24.00082588195801 L -4793.009765625 24.00087547302246 L -4793 24.00090026855469 C -4782.5234375 24.00090026855469 -4774 15.47697639465332 -4774 4.999675750732422 C -4774 -5.476949214935303 -4782.5234375 -14.00032424926758 -4793 -14.00032424926758 C -4793.12939453125 -14.00032424926758 -4793.26416015625 -13.99889945983887 -4793.40087890625 -13.99607372283936 C -4793.17041015625 -15.27709865570068 -4792.91552734375 -16.55267333984375 -4792.6435546875 -17.78854942321777 C -4791.15576171875 -17.265625 -4789.59375 -17.00012397766113 -4788 -17.00012397766113 C -4780.28076171875 -17.00012397766113 -4774.0009765625 -23.28064918518066 -4774.0009765625 -31.00044822692871 C -4774.0009765625 -36.79319763183594 -4777.482421875 -41.9079475402832 -4782.8701171875 -44.0308723449707 C -4774.33984375 -59.77907562255859 -4761.7373046875 -73.02714538574219 -4746.42529296875 -82.34429931640625 C -4738.6904296875 -87.05100250244141 -4730.36474609375 -90.689697265625 -4721.6806640625 -93.1593017578125 C -4712.71875 -95.70772552490234 -4703.40576171875 -96.99987030029297 -4694 -96.99987030029297 C -4680.365234375 -96.99987030029297 -4667.13818359375 -94.32945251464844 -4654.6865234375 -89.06279754638672 C -4648.7021484375 -86.53174591064453 -4642.93017578125 -83.39869689941406 -4637.5302734375 -79.75064849853516 C -4632.1826171875 -76.13784790039063 -4627.1533203125 -71.98844909667969 -4622.5830078125 -67.41764831542969 C -4618.0126953125 -62.84727478027344 -4613.86279296875 -57.81814956665039 -4610.24951171875 -52.46997451782227 C -4606.60205078125 -47.07137298583984 -4603.46923828125 -41.29917526245117 -4600.9375 -35.31374740600586 C -4595.6708984375 -22.86199951171875 -4593.00048828125 -9.635024070739746 -4593.00048828125 3.999750852584839 C -4593.00048828125 17.63482666015625 -4595.6708984375 30.86202621459961 -4600.9375 43.31394958496094 C -4603.46923828125 49.29940032958984 -4606.60205078125 55.07165145874023 -4610.24951171875 60.47037506103516 C -4613.86279296875 65.81862640380859 -4618.0126953125 70.84780120849609 -4622.5830078125 75.41819763183594 C -4627.1533203125 79.98902893066406 -4632.1826171875 84.13845062255859 -4637.5302734375 87.75127410888672 C -4642.93017578125 91.39929962158203 -4648.7021484375 94.53237915039063 -4654.6865234375 97.0634765625 C -4667.13818359375 102.3301544189453 -4680.365234375 105.0005722045898 -4694 105.0005722045898 Z">
+                </path>
+            </svg>
+
+            <div class="containers">
+                <div class="left">
+                    <div class="armour">
+                        <div class="GaugeMeter_armour" id="GaugeMeter_1" data-size="27" data-animationstep=1000
+                            data-fill="#00000078" data-width="2" data-style="circle" data-color="#176DF6"
+                            data-back="#707070">
+                        </div>
+                        <div class="armour_icon">
+                            <img src="https://cdn.discordapp.com/attachments/840446706697109534/840446792550318150/amour_icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="health">
+                        <div class="GaugeMeter_health" id="GaugeMeter_1" data-size="40" data-fill="#00000078"
+                            data-width="2" data-style="circle" data-color="#FF7876" data-back="#707070"
+                            data-animationstep=1000>
+                        </div>
+                        <div class="health_icon">
+                            <img src="https://cdn.discordapp.com/attachments/840446706697109534/840446788069883924/heart_icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="car_life">
+                        <div class="GaugeMeter_car_life" id="GaugeMeter_1" data-size="27" data-fill="#00000078"
+                            data-width="2" data-style="circle" data-color="#82e69a" data-back="#707070"
+                            data-animationstep=1000>
+                        </div>
+                        <div class="car_life_icon">
+                            <img src="https://cdn.discordapp.com/attachments/840446706697109534/840446796224659466/car_life_icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="gear">
+                        <div class="gear_img">
+                            <img src="https://cdn.discordapp.com/attachments/840446706697109534/840446801642913792/gear_icon.png" alt="">
+                        </div>
+                        <span class="gear_value">6</span>
+                    </div>
+                    <div class="speed">
+                        <span class="rpm_text">00<p class="rpm_value">0</p></span>
+                        <br>
+                        <p class="kmh">KM/H</p>
+                    </div>
+                    <div class="car_belt">
+                        <br>
+                        <img id="car_belt_icon" src="https://cdn.discordapp.com/attachments/840446706697109534/840446793799565342/car_belt_icon.png">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="gasoline">
+                        <div class="GaugeMeter_">
+                            <div class="GaugeMeter_gasoline" id="GaugeMeter_1" data-size="237   " data-animationstep=1000
+                                data-width="10" data-style="Arch" data-color="#f99e14" data-back="#707070"
+                                data-showvalue=false></div>
+                        </div>
+                        <div class="gasoline_icon">
+                            <img src="https://cdn.discordapp.com/attachments/840446706697109534/840446799881568256/gasoline_icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js'></script>
+    <script src="GaugeMeter.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: transparent;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.inline {
+    display: inline;
+}
+
+.informations {
+    position: absolute;
+    top: 45px;
+    left: 25px;
+    height: 50px;
+}
+
+.informations .containers .hours {
+    float: left;
+    height: 30px;
+    border-radius: 15px;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+.informations .containers .hours .hours_icon {
+    float: left;
+    padding: 5px 3px 0 10px;
+}
+
+.informations .containers .hours .hours_icon img {
+    width: 20px;
+}
+
+.informations .containers .hours .hours_value {
+    float: right;
+    padding: 6px 10px 0 0;
+    color: white;
+    font-size: 15px;
+}
+
+.informations .containers .street_name {
+    float: left;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 15px;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+.informations .containers .street_name .street_name_icon {
+    float: left;
+    padding: 5px 0 0 10px;
+}
+
+.informations .containers .street_name .street_name_icon img {
+    width: 20px;
+}
+
+.informations .containers .street_name .street_name_value {
+    float: right;
+    padding: 6px 10px 0 0;
+    color: white;
+    font-size: 15px;
+}
+
+.player_hud {
+    width: 215px;
+    height: 65px;
+    position: absolute;
+    right: 13px;
+    bottom: 40px;
+}
+
+.player_hud .containers .health {
+    width: 100%;
+    height: 40px;
+}
+
+.player_hud .containers .health .health_bar {
+    position: relative;
+    top: 10px;
+    width: 200px;
+    height: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image: linear-gradient(to left, #000000e6, #000000b3);
+}
+
+.player_hud .containers .health .health_bar .health_value_background {
+    position: relative;
+    top: 6px;
+    left: 5px;
+    width: 180px;
+    height: 8px;
+    border-radius: 4px;
+    background-image: linear-gradient(to left, #0d0a0c, #535353);
+}
+
+.player_hud .containers .health .health_bar .health_value_background .health_value {
+    float: right;
+    width: calc(0 / 100 * 180px);
+    height: 8px;
+    border-radius: 4px;
+    background-color: #FF7876;
+    transition: all 0.5s ease-out;
+}
+
+.player_hud .containers .health .health_icon {
+    float: right;
+    position: relative;
+    bottom: 15px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom left, #494949, black);
+}
+
+.player_hud .containers .health .health_icon img {
+    position: relative;
+    left: 7.5px;
+    top: 7.5px;
+    width: 15px;
+}
+
+.player_hud .containers .armour {
+    margin-top: -3px;
+    width: 100%;
+    height: 30px;
+}
+
+.player_hud .containers .armour .armour_bar {
+    position: relative;
+    top: 10px;
+    width: 200px;
+    height: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image: linear-gradient(to left, #000000e6, #000000b3);
+}
+
+.player_hud .containers .armour .armour_bar .armour_value_background {
+    position: relative;
+    top: 6px;
+    left: 5px;
+    width: 180px;
+    height: 8px;
+    border-radius: 4px;
+    background-image: linear-gradient(to left, #0d0a0c, #535353);
+}
+
+.player_hud .containers .armour .armour_bar .armour_value_background .armour_value {
+    float: right;
+    width: calc(0 / 100 * 180px);
+    height: 8px;
+    border-radius: 4px;
+    background-color: #176DF6;
+    transition: all 0.3s ease-out;
+}
+
+.player_hud .containers .armour .armour_icon {
+    float: right;
+    position: relative;
+    bottom: 15px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom left, #494949, black);
+}
+
+.player_hud .containers .armour .armour_icon img {
+    position: relative;
+    left: 7.5px;
+    top: 7.5px;
+    width: 15px;
+}
+
+#GaugeMeter_1 SPAN,
+#GaugeMeter_1 B {
+    display: none;
+}
+
+.player_velocimeter {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 25px;
+    bottom: 27px;
+    transition: opacity .25s ease-in-out;
+}
+
+.player_velocimeter .background {
+    position: absolute;
+    fill: #00000078;
+    width: 100%;
+    height: 100%;
+}
+
+.player_velocimeter .containers .left .armour {
+    position: absolute;
+    top: 49px;
+    right: 180px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+
+.player_velocimeter .containers .left .armour .GaugeMeter_armour {
+    transform: scaleX(-1);
+}
+
+.player_velocimeter .containers .left .armour .armour_icon {
+    position: relative;
+    bottom: 29px;
+    right: 10px;
+    transform: rotate(180deg);
+}
+
+.player_velocimeter .containers .left .armour .armour_icon img {
+    width: 14px;
+}
+
+.player_velocimeter .containers .left .health {
+    position: absolute;
+    top: 91px;
+    right: 179px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+
+.player_velocimeter .containers .left .health .GaugeMeter_health {
+    transform: scaleX(-1);
+}
+
+.player_velocimeter .containers .left .health .health_icon {
+    position: relative;
+    bottom: 39px;
+    left: -1px;
+    transform: rotate(180deg);
+}
+
+.player_velocimeter .containers .left .health .health_icon img {
+    width: 19px;
+}
+
+.player_velocimeter .containers .left .car_life {
+    position: absolute;
+    top: 120px;
+    right: 180px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+
+.player_velocimeter .containers .left .car_life .GaugeMeter_car_life {
+    transform: scaleX(-1);
+}
+
+.player_velocimeter .containers .left .car_life .car_life_icon {
+    position: relative;
+    bottom: 28px;
+    right: 9px;
+    transform: rotate(180deg);
+}
+
+.player_velocimeter .containers .left .car_life .car_life_icon img {
+    width: 13px;
+}
+
+.player_velocimeter .containers .center {
+    position: absolute;
+    top: 20px;
+    left: 85px;
+    text-align: center;
+    color: white;
+}
+
+.player_velocimeter .containers .center .gear {
+    padding-top: 10px;
+}
+
+.player_velocimeter .containers .center .gear .gear_img {
+    float: left;
+}
+
+.player_velocimeter .containers .center .gear .gear_value {
+    padding-left: 5px;
+    float: left;
+}
+
+.player_velocimeter .containers .center .speed {
+    position: relative;
+    top: 15px;
+    right: 35px;
+}
+
+.player_velocimeter .containers .center .speed .rpm_text {
+    color: #707070;
+    font-size: 60px;
+    float: left;
+}
+
+.player_velocimeter .containers .center .speed .rpm_value {
+    float: right;
+    color: white;
+}
+
+.player_velocimeter .containers .center .speed .kmh {
+    font-size: 13px;
+}
+
+.player_velocimeter .containers .center .car_belt {
+    float: left;
+    margin-left: 7px;
+}
+
+.player_velocimeter .containers .center .car_belt img {
+    width: 20px;
+}
+
+.player_velocimeter .containers .right .gasoline {
+    height: 200px;
+}
+
+.player_velocimeter .containers .right .gasoline .GaugeMeter_ {
+    transform: rotate(90deg);
+}
+
+.player_velocimeter .containers .right .gasoline .GaugeMeter_ .GaugeMeter_gasoline {
+    position: Relative;
+    right: 39px;
+    bottom: -2px;
+    Text-Align: Center;
+    Overflow: Hidden;
+    Cursor: Default;
+    transform: scaleX(-1);
+}
+
+.player_velocimeter .containers .right .gasoline .GaugeMeter_ .GaugeMeter_gasoline SPAN,
+.player_velocimeter .containers .right .gasoline .GaugeMeter_ .GaugeMeter_gasoline B {
+    display: none;
+}
+
+.player_velocimeter .containers .right .gasoline .GaugeMeter_ .GaugeMeter[data-style="Semi"] B {
+    Margin: 0 10%;
+    Width: 80%;
+}
+
+.player_velocimeter .containers .right .gasoline .GaugeMeter_ .GaugeMeter_gasoline S,
+.player_velocimeter .containers .right .gasoline .GaugeMeter_ .GaugeMeter_gasoline U {
+    Text-Decoration: None;
+    Font-Size: .5em;
+    Opacity: .5;
+}
+
+.player_velocimeter .containers .right .gasoline .GaugeMeter_ .GaugeMeter_gasoline B {
+    Color: Black;
+    Font-Weight: 300;
+    Font-Size: .5em;
+    Opacity: .8;
+}
+
+.player_velocimeter .containers .right .gasoline .gasoline_icon {
+    position: relative;
+    bottom: 160px;
+    left: 176px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #707070;
+}
+
+.player_velocimeter .containers .right .gasoline .gasoline_icon img {
+    position: relative;
+    top: 7px;
+    left: 8px;
+    width: 20px;
+}
