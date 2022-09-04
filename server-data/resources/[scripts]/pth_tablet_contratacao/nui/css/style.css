@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+:root {
+  --theme-bg-color: rgba(16, 18, 27, 0.4);
+  --border-color: rgba(113, 119, 144, 0.25);
+  --theme-color: #f9fafb;
+  --inactive-color: rgba(113, 119, 144, 0.78);
+  --body-font: "Poppins", sans-serif;
+  --hover-menu-bg: rgba(12, 15, 25, 0.3);
+  --content-title-color: #999ba5;
+  --content-bg: rgba(146, 151, 179, 0.13);
+  --button-inactive: rgba(249, 250, 251, 0.55);
+  --dropdown-bg: #21242d;
+  --dropdown-hover: #2a2e3c;
+  --popup-bg: #161925;
+  --search-bg: #14162b;
+  --overlay-bg: rgba(36, 39, 59, 0.3);
+  --scrollbar-bg: rgba(1, 2, 3, 0.4);
+}
+.light-mode {
+  --theme-bg-color: rgba(255, 255, 255, 0.31);
+  --theme-color: #3c3a3a;
+  --inactive-color: #333333;
+  --button-inactive: #3c3a3a;
+  --search-bg: rgba(255, 255, 255, 0.31);
+  --dropdown-bg: #f7f7f7;
+  --overlay-bg: rgba(255, 255, 255, 0.3);
+  --dropdown-hover: #ececec;
+  --border-color: rgba(255, 255, 255, 0.35);
+  --popup-bg: white;
+  --hover-menu-bg: rgba(255, 255, 255, 0.35);
+  --scrollbar-bg: rgba(255, 253, 253, 0.57);
+  --content-title-color: --theme-color;
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  background-color: transparent;
+  overflow: auto;
+}
+body {
+  font-family: var(--body-font);
+}
+
+
+
+/* DISPLAY */
+#tablet{
+  display: none;
+}
+#tablet_background{
+  display: none;
+}
+
+#gestaoequipe{
+  display: none;
+}
+
+#gestaocontrato{
+  display: none;
+}
+
+
+/***********/
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.tablet {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  height: 70%;
+
+  border-radius: 15px;
+
+  overflow: auto;
+  position: fixed;
+
+  background-color: var(--theme-bg-color);
+}
+
+.tablet.frame {
+  border-top: 20px solid #111;
+  border-left: 20px solid #111;
+  border-right: 20px solid #111;
+  border-bottom: 40px solid #111;
+}
+
+
+.menu-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin: 0.3rem;
+}
+
+.header {
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 30px;
+}
+
+.header-menu a {
+  padding: 20px 30px;
+  text-decoration: none;
+  color: var(--inactive-color);
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.header-menu a.active, .header-menu a:hover, .header-menu div.active, .header-menu div:hover {
+  color: var(--theme-color);
+  border-bottom: 2px solid var(--theme-color);
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.section-display{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  border-radius: 14px;
+  background-color: var(--content-bg);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.section-display-title {
+  color: var(--content-title-color);
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.box-display{
+    display: block;
+    padding: 1.25rem;
+}
+
+
+.select, .select select{
+  width: 100%;
+}
+
+.field input, .field select{
+  font-family: var(--body-font);
+}
+
+
+/* TABLE */
+
+.table{
+  border-radius: 14px;
+  border-collapse: collapse;
+  overflow: hidden;
+
+  color: var(--theme-color);
+}
+
+.table thead{
+  background-color: var(--dropdown-bg);
+}
+
+.table thead th{
+  font-weight: 500;
+}
+
+.table thead th, .table tbody td {
+  color: var(--theme-color);
+}
+
+.table tbody tr{
+  transition: 0.3s;
+}
+.table tbody tr:hover {
+  background-color: var(--theme-bg-color);
+}
+
+/* POPUP*/
+.pop-up {
+  padding: 2rem 2rem;
+  overflow-y: auto;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+  background-color: var(--popup-bg);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  white-space: normal;
+}
+@media screen and (max-width: 570px) {
+  .pop-up {
+    width: 100%;
+  }
+}
+.pop-up__title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.close{
+  cursor: pointer;
+}
+
+.pop-up__subtitle {
+  white-space: normal;
+  margin: 20px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+.pop-up__subtitle a {
+  color: var(--theme-color);
+}
+
+.pop-up__button-wrapper{
+  border-top: 1px solid var(--border-color);
+  padding-top: 1rem;
+}
+
+.pop-up__button-wrapper button{
+  margin: 0 0.3rem 0 0.3rem;
+}
+
+/***********/
+
+/* ACCORDION */
+
+.accordion {
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  color: var(--theme-color);
+  font-family: var(--body-font);
+}
+
+.accordion-header,
+.accordion-body {
+  background: white;
+}
+
+.accordion-header {
+  padding: 1.5em 1.5em;
+  background-color: var(--dropdown-bg);
+  color: var(--theme-color);
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: var(--body-font);
+  /*letter-spacing: .1rem;*/
+  transition: all .3s;
+  text-transform: uppercase;
+}
+
+.accordion-header-sub{
+  padding-left: 4em;
+}
+
+.accordion__item:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+
+.accordion__item .accordion__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.accordion-header:hover {
+  background: var(--dropdown-hover);
+  position: relative;
+  z-index: 5;
+}
+
+.accordion-body {
+  background: var(--content-bg);
+  display: none;
+}
+
+.accordion-body__contents {
+  padding: 1.5em 1.5em;
+  font-size: .85em;
+}
+
+.accordion__item.active:last-child .accordion-header {
+  border-radius: none;
+}
+
+.accordion:first-child > .accordion__item > .accordion-header {
+  border-bottom: 1px solid transparent;
+}
+
+.accordion > .accordion__item:first-child > .accordion-header {
+  border-radius: 14px 14px 0 0;
+}
+
+.accordion > .accordion__item:last-child > .accordion-header {
+  border-radius: 0 0 14px 14px;
+}
+.accordion > .accordion__item.active:last-child > .accordion-header {
+  border-radius: 0 0 0 0;
+}
+
+.accordion > .accordion__item > .accordion-body >.accordion > .accordion__item > .accordion-header{
+  border-radius: 0 0 0 0;
+}
+
+.accordion__item > .accordion-header:after {
+  content: "\f107";
+  font-family: "FontAwesome";
+  font-size: 1.2em;
+  float: right;
+  position: relative;
+  top: -2px;
+  transition: .3s all;
+  transform: rotate(0deg);
+}
+
+.accordion__item.active > .accordion-header:after {
+  transform: rotate(-180deg);
+}
+
+.accordion__item.active .accordion-header {
+  background: var(--dropdown-hover);
+}
+
+.accordion__item .accordion__item .accordion-header {
+  color: var(--theme-color);
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 1em;
+  }
+  
+  .accordion {
+    width: 100%;
+  }
+}
+
+/***********************************/
+
+/* IMAGES*/
+.profile-img{
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--theme-color);
+}
+
+
+
+/* TEXT*/
+.tablet_title{
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+/* BACKGROUND */
+.background_image{
+  z-index: -1;
+  position: absolute;
+  background: url("../img/background_image.jpg");
+  /*background-image: url(https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg);*/
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 15px;
+}
+
+.desfoque{
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* TEXT COLOR */
+.body-font{
+  font-family: var(--body-font);
+}
+
+.t-theme-color{
+  color: var(--theme-color);
+}
+
+.t-yellow{
+  color: #ffce45;
+}
+
+
+
+/* BARCKGROUND COLORS*/
+.b-transparent{
+  background-color: transparent;
+}
+
+.b-theme-bg-color{
+  background-color: var(--theme-bg-color);
+}
+
+
+.b-red-circle{
+  background-color: #f96057;
+}
+.b-yellow-circle{
+  background-color: #f8ce52;
+}
+.b-green-circle{
+  background-color: #5fcf65;
+}
+
+
+
+
+
+/* NOTIFICACOES             */
+
+.nonitify{
+  /*display: none;*/
+  z-index: 40;
+  top: 1%;
+  right: 1%;
+  position: absolute;
+}
+
+#pop_notification{
+  display: flex;
+}
+
+/****************************/
+
+
+
+.dark-light {
+  background-color: var(--dropdown-bg);
+  box-shadow: -1px 3px 8px -1px rgba(0, 0, 0, 0.2);
+}

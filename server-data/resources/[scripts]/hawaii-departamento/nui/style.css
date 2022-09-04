@@ -1,0 +1,291 @@
+@font-face {
+    font-family: "Aftika Bold";
+    src: url("fonts/FontsFree-Net-AftikaBold.ttf") format("truetype");
+  }
+
+@font-face {
+  font-family: "Aftika Regular";
+  src: url("fonts/FontsFree-Net-AftikaRegular.ttf") format("truetype");
+}
+
+
+#container {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.63);
+    overflow: hidden;
+}
+
+.top-bar {
+    position: relative;
+    width: 100%;
+    height: 5%;
+    background-color: rgba(0, 0, 0, 0.63);
+    overflow: hidden;
+}
+
+.ammunation-icon {
+    width: 12%;
+    height: 100%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.1vw;
+    font-family: "Aftika Bold";
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wallet {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    text-transform: uppercase;
+    color: #05ED87;
+    font-size: 1vw;
+    font-family: "Aftika Regular";
+    text-align: right;
+    top: 0;
+    right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sessions {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.opcao {
+    height: 100%;
+    width: 23%;
+    border: none;
+    outline:none;
+    background-color: transparent;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-family: "Aftika Regular";
+    color: white;
+    margin: 0.05vw;
+}
+
+.opcao:hover {
+    background-color: rgba(255, 255, 255, 0.137);
+    border-bottom: solid 4px #2894CD;
+}
+
+.opcao-focus {
+    background-color: rgba(255, 255, 255, 0.137);
+    border-bottom: solid 4px #2894CD;
+}
+
+.secao {
+    position: absolute;
+    width: 35%;
+    height: 70%;
+    top: 0;
+    bottom: 0;
+    left: 2%;
+    margin: 6% auto;
+    display: none;
+}
+
+.secao-titulo {
+    width: 95%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5vw;
+    font-family: "Aftika Bold";
+    margin: auto;
+}
+
+.items {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    direction: rtl;
+}
+
+.item {
+    position: relative;
+    direction: ltr;
+    width: 99%;
+    height: 12%;
+    background-color: rgba(0, 0, 0, 0.356);
+    border: none;
+    outline: none;
+    margin: 3px auto;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9vw;
+    font-family: "Aftika Bold";
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.item:hover {
+    background-color: rgba(0, 38, 48, 0.452);
+}
+
+.item-focus {
+    background-color: rgba(0, 38, 48, 0.452);
+    border-right: solid 5px rgb(0, 195, 255);
+}
+
+.item img {
+    width: 10%;
+    float: left;
+    margin: auto 30% auto 5%;
+}
+
+
+
+
+.item-escolhido {
+    position: absolute;
+    width: 42%;
+    height: 82%;
+    top: 4%;
+    bottom: 0;
+    right: 10%;
+    margin: 6% auto;
+    display: none;
+
+}
+
+.item-escolhido img {
+    position: relative;
+    margin: auto;
+    width: 50%;
+}
+
+.item-escolhido-titulo {
+    width: fit-content;
+    margin: auto;
+    font-size: 2vw;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Aftika Bold";
+    text-align: center;
+    border-bottom: 3px solid rgb(0, 195, 255);
+    align-items: center;
+}
+
+.item-image {
+    height: 50%;
+    margin: 3% auto;
+    display: flex;
+    align-items: center;
+}
+
+.descricao {
+    background-color: rgba(0, 0, 0, 0.233);
+    width: 55%;
+    height: 15%;
+    color: white;
+    font-size: 0.8vw;
+    font-family: "Aftika Regular";
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.descricao span {
+    width: 70%;
+    text-align: center;
+}
+
+.price {
+    font-family: "Aftika Bold";
+    margin: 5% auto;
+    text-align: center;
+    font-size: 1.2vw;
+    color: #05F98E;
+}
+
+
+
+
+
+.comprar {
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    background-color: #05F98E;
+    font-family: "Aftika Bold";
+    width: 8%;
+    height: 3%;
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    border: none;
+    outline: none;
+    display: none;
+}
+
+.comprar:hover {
+    background-color: #fa2e2e;
+    color: white;
+}
+
+
+.comprar:active {
+	box-shadow: 0px 0px 0px 1px #fa2e2e86;
+	animation: anim-shadow .3s forwards;
+}
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+    height: 1px;
+    border-radius: .2rem;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+ ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #515151;
+    border-radius: .2rem;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(112, 112, 112);
+}
+
+ ::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(left, #22ADD4, #1E98BA);
+}
+
+@keyframes anim-shadow {
+	100% {
+		box-shadow: 0px 0px 50px 20px rgba(112,111,211,0);
+	}
+}

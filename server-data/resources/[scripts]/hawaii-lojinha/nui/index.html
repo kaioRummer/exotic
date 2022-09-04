@@ -1,0 +1,32 @@
+<html>
+  <head>
+		<meta charset="UTF-8">
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	</head>
+
+  <body>
+    <div id="container">
+      <div class="top-bar">
+        <div class="ammunation-icon"><i class="fas fa-crosshairs"></i> &nbsp;ammunation</div>
+        <div class="wallet"></div>
+        <div class="sessions">
+          <button class="opcao" onclick="changeCategory('armas brancas')">armas brancas</button>
+        </div>
+      </div>
+      <div class="secao">
+        <div class="secao-titulo"></div>
+        <div class="items"></div>
+      </div>
+      <div class="item-escolhido">
+        <div class="item-escolhido-titulo"></div>
+        <div class="item-image"></div>
+        <div class="descricao"></div>
+        <div class="price"></div>
+      </div>
+      <button class="comprar" onclick="buyItem()">comprar</button>
+      <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

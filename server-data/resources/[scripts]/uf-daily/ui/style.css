@@ -1,0 +1,252 @@
+*{margin: 0; padding: 0;}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+}
+
+#container{
+    width: 960px;
+    height: 450px;
+
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    margin: auto;
+
+    background-image: linear-gradient(to bottom, #00000080, #00000008);
+
+    border-radius: 10px;
+}
+
+
+
+#titleRecompensa{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+#premios{
+    width: 100%;
+    height: 280px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.divPremios{
+    width: 33%;
+    height: 100%;
+    float: left;
+}
+
+#chances::after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #ffffff00, #ffffff80, #ffffff00);
+    float: right;
+
+    position: relative;
+    bottom: 300px;
+}
+
+#premioAtual::after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #ffffff00, #ffffff80, #ffffff00);
+    float: right;
+
+    position: relative;
+    bottom: 240px;
+}
+
+
+
+.titlePremios{
+    width: 100%;
+    height: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+#divPremio{
+    width: 162px;
+    height: 192px;
+    background-image: url(https://cdn.discordapp.com/attachments/708215158606135306/837186066393333760/ATUALFUNDO.png);
+    background-size: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+#divProximo{
+    width: 162px;
+    height: 192px;
+    background-image: url(https://cdn.discordapp.com/attachments/708215158606135306/837186067459342366/PROXIMO.png);
+    background-size: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#listaChances{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.item{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+#divPremio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+#itemRecebido{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+#divProximo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+#divProximo img{
+    position: relative;
+    left: 15px;
+    bottom: 25px;
+}
+
+#cadeado{
+    position: absolute;
+    width: 162px;
+    height: 192px;
+    background-image: url(https://cdn.discordapp.com/attachments/708215158606135306/837186064963338291/CADEADO.png);
+    background-size: 70% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#receber{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to bottom, #5DFFC6, #12FF9A);
+    font-weight: 600;
+    color: #000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    transition: .1s ease-in-out;
+}
+
+#receber:hover{
+    transform: scale(1.01);
+    background: linear-gradient(to bottom, #0e7e4d, #05d67c);
+
+}
+
+
+#proguess{
+    width: 100%;
+    height: 60px;
+    float: left;
+
+    margin-top: 30px;
+
+}
+
+.textProguess{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 13px;
+}
+
+.textProguess span{
+    color: #FCD120;
+    font-size: 16px;
+}
+
+#barProguess{
+    width: 80%;
+    height: 10px;
+    border-radius: 3px;
+    margin: auto;
+
+    background: #ffffff80;
+}
+
+#barProguess span{
+    display: block;
+    border-radius: 3px;
+    height: 10px;
+    width: 32.8%;
+    background: #0DE788;
+}
+
+#horas{
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rewardAnim {
+    animation: diminuindo 8s ease 1;
+}
+@keyframes diminuindo{
+
+    from {
+        zoom: 1.3;
+
+      }
+
+      to {
+        zoom: 1.0;
+
+      }
+}

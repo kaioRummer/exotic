@@ -1,0 +1,12 @@
+{
+	"$schema": "http://json-schema.org/schema",
+	"required": [
+		"levels"
+	],
+	"properties": {
+		"levels": {
+			"type": "number",
+			"minimum": 1
+		}
+	}
+}

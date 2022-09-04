@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:wght@800&display=swap");
+:root {
+    --mainColor: rgb(109, 109, 109);
+    --tabletBackgroundColor: rgb(255, 255, 255);
+    --tabletTextsColor: rgb(255, 255, 255);
+    --tabletTextsFontFamily: 'Nunito';
+}
+
+body {
+    background: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    word-break: normal;
+}
+
+img {
+    width: 200px; height: 200px;
+}
+
+h4 {
+    font-family: var(--tabletTextsFontFamily);
+}
+
+.ocorrencia {
+    border-bottom: solid 2px rgba(44, 44, 44, 0.309);
+    text-align: justify !important;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    vertical-align: middle;
+}
+
+.personLevel {
+    color: var(--mainColor);
+    font-family: var(--tabletTextsFontFamily);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.pesquisa {
+    margin-top: 10%; max-width: 500px !important;
+}
+
+.rawButtonPrender {
+    margin-left: 85%; margin-top: 7%; position: fixed !important;
+}
+
+.rawButtonHome {
+    margin-left: 0.5%; margin-top: 2%; position: fixed !important;
+}
+
+.rawButtonExit {
+    margin-left: 93%; margin-top: 2%; position: fixed !important;
+}
+
+.botao-prender {
+    margin-bottom:15%;
+    background-color: var(--mainColor);
+    padding: 5px;
+    width: 85px;
+    color: var(--tabletTextsColor);
+    font-family: var(--tabletTextsFontFamily); 
+    font-weight: bold;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.botao-prender:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.botao-sair {
+    margin-top:5%;
+    background-color: var(--mainColor);
+    padding: 5px;
+    width: 35px;
+    color: var(--tabletTextsColor);
+    font-family: var(--tabletTextsFontFamily); 
+    font-weight: bold;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.botao-sair:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.logo {
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 10%;
+    position: relative;
+}
+
+.container {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    height: 545px;
+    max-width: 700px;
+    max-height: 545px;
+    padding: 2px;
+    transform: translate(-50% , -50%);
+    background: rgba(24, 24, 24, 0.698);
+    border-radius: 15px;
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+  }
+.container {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+.nameH1 {
+    font-family: var(--tabletTextsFontFamily); font-weight: bold;
+}
+
+.userImage {
+    border: solid 2px var(--mainColor); margin-top:0%; width: 200px; height: 200px; object-fit: cover !important;
+}
+
+.botao-home {
+    margin-top:5%;
+    margin-left: 10%!important;;
+    background-color: var(--mainColor);
+    padding: 5px;
+    width: 35px;
+    color: var(--tabletTextsColor);
+    font-family: var(--tabletTextsFontFamily); 
+    font-weight: bold;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.botao-home:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.botao-limparf {
+    margin-top:5%;
+    margin-right: 50%!important;
+    right: 50% !important;
+    transform: translateX(50%) !important;
+    background-color: var(--mainColor);
+    padding: 5px;
+    width: 35px;
+    color: var(--tabletTextsColor);
+    font-family: var(--tabletTextsFontFamily); 
+    font-weight: bold;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.botao-limparf:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+
+.botao {
+    background-color: var(--mainColor);
+    padding: 12px;
+    width: 130px;
+    color: var(--tabletTextsColor);
+    font-family: var(--tabletTextsFontFamily); 
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+  
+.botao:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.botao2 {
+    margin-top: 2%;
+    background-color: var(--mainColor);
+    padding: 12px;
+    color: var(--tabletTextsColor);
+    font-family: var(--tabletTextsFontFamily); 
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+  
+.botao2:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.h1-main {
+    color: white;
+    margin-top:6.5%; font-family: 'Nunito'; font-weight: bold;
+}
+
+#alert {
+    position: fixed;
+    width: 23%;
+    top:5%;
+    left: 38.6%;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    display: none;
+    z-index: 999999;
+    border-radius: 20px;
+}
+
+@media only screen and (min-width: 1920px) {
+    #alert {
+        position: fixed;
+        width: 23%;
+        top: 22.5%;
+        left: 38.6%;
+        color: #FFF;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        display: none;
+        z-index: 999999;
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (width: 1366px) {
+    #alert {
+        position: fixed;
+        width: 23%;
+        top: 11.5%;
+        left: 38.6%;
+        color: #FFF;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        display: none;
+        z-index: 999999;
+        border-radius: 20px;
+    }
+}
+
+
+
+.MotivosPrisao {
+    max-height: 280px;
+    overflow-y: scroll;
+}
+
+.MotivosPrisao::-webkit-scrollbar {
+    display: none;
+  }
+.MotivosPrisao {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+.MotivosPrisao input:checked {
+    background-color: #5d5d5d;
+}
+
+
+label {
+    font-size: 17px;
+    margin-left: 1% !important;
+}
+
+.sucesso {
+    background: #4caf50;
+}
+.info {
+    background: #999;
+}
+.erro {
+    background: #e01232;
+}
+
+input,textarea {
+    color:rgb(109, 109, 109);
+    outline:none;
+    border: solid 3px var(--mainColor);
+    border-radius: 15px;
+    padding: 2%;
+    resize: none !important;
+    overflow: hidden;
+}
+
+input::-webkit-input-placeholder,input:-moz-placeholder,input::-moz-placeholder,input:-ms-input-placeholder,textarea::-webkit-input-placeholder,textarea:-moz-placeholder,textarea::-moz-placeholder,textarea:-ms-input-placeholder {
+    color:#999;
+}
+
+input.input1+.shadow-input1,textarea.input1+.shadow-input1 {
+    border-radius:25px;
+}

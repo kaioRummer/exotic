@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <section class="departamento">
+      <div class="shop">
+        <div id="title">Departament</div>
+        <div class="header">
+          <div class="nameclose">
+            <h1></h1>
+          </div>
+          <div class="money">
+            <div class="bank">
+              <i class="fa-brands fa-bitcoin"></i>
+              <p>$ <span></span></p>
+            </div>
+            <div class="wallet">
+              <i class="fa-regular fa-money-bill-1"></i>
+              <p>$ <span></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <div class="item">
+            <h1>Energetico</h1>
+            <div class="image">
+              <img src="./images/energetico.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button price="1700" item="energetico" name="Energético" class="buy" onclick="buy('energetico',1700,'Energetico')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 1.700</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Celular</h1>
+            <div class="image">
+              <img src="./images/celular.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button price="3000" item="celular" name="Celular" onclick="buy('celular',3000,'Celular')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 3.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Militec</h1>
+            <div class="image">
+              <img src="./images/militec.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button price="15000" item="militec" name="Militec" onclick="buy('militec',15000,'Mochila')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 15.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Mochila</h1>
+            <div class="image">
+              <img src="./images/mochila.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button price="10000" item="mochila" name="Mochila" class="buy" onclick="buy('mochila',10000,'Mochila')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 10.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Pneu</h1>
+            <div class="image">
+              <img src="./images/pneus.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button price="4000" item="pneus" name="Pneus" onclick="buy('pneus',4000,'Pneus')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 4.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Rádio</h1>
+            <div class="image">
+              <img src="./images/radio.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button price="4000" item="radio" name="Rádio" onclick="buy('radio',4000,'Radio')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 4.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Repairkit</h1>
+            <div class="image">
+              <img src="./images/repairkit.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button price="10000" item="repairkit" name="Kit de Reparos" onclick="buy('repairkit',10000,'Kit de Reparos')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 10.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Roupas</h1>
+            <div class="image">
+              <img src="./images/roupas.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button price="5000" item="roupas" name="Roupas" onclick="buy('roupas',5000,'Roupas')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 5.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Roupas</h1>
+            <div class="image">
+              <img src="./images/aliancaprata.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('paraliancaprata',10000,'Aliança de prata')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 10.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Roupas</h1>
+            <div class="image">
+              <img src="./images/aliancaouro.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('paraliancaouro',20000,'Aliança de ouro')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 20.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ammunation">
+      <div class="shop">
+        <div id="title">Ammunation</div>
+        <div class="header">
+          <div class="nameclose">
+            <h1 id="name"></h1>
+          </div>
+          <div class="money">
+            <div class="bank">
+              <i class="fa-brands fa-bitcoin"></i>
+              <p>$ <span id="bank"></span></p>
+            </div>
+            <div class="wallet">
+              <i class="fa-regular fa-money-bill-1"></i>
+              <p>$ <span id="wallet"></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <div class="item">
+            <h1>Modificador de arma</h1>
+            <div class="image">
+              <img src="https://cdn.discordapp.com/attachments/674987131227078699/764370907883634728/compattach.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('compattach',30000,'Modificador de Armas')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 30.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Canivete</h1>
+            <div class="image">
+              <img src="https://cdn.discordapp.com/attachments/852628978032050196/859426615279484948/canivete.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('wbody|WEAPON_SWITCHBLADE',4500,'Canivete')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 4.500</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Machado</h1>
+            <div class="image">
+              <img src="https://cdn.discordapp.com/attachments/674987131227078699/764371008328433674/machado.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('militec',15000,'Mochila')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 4.500</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Taco</h1>
+            <div class="image">
+              <img src="https://cdn.discordapp.com/attachments/852628978032050196/859426612029292564/beisebol.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('mochila',10000,'Mochila')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>>$ 4.500</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Garrafa</h1>
+            <div class="image">
+              <img src="https://cdn.discordapp.com/attachments/852628978032050196/859426717876486184/garrafa.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('wbody|WEAPON_BOTTLE',4500,'Garrafa')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 4.500</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Machado de Batalha</h1>
+            <div class="image">
+              <img src="https://cdn.discordapp.com/attachments/674987131227078699/764370856125530152/batalha.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('wbody|WEAPON_BATTLEAXE',4500,'Machado de Batalha')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 4.500</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Taco de sinuca</h1>
+            <div class="image">
+              <img src="https://cdn.discordapp.com/attachments/852628978032050196/859426610381717504/sinuca.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('wbody|WEAPON_POOLCUE',4500,'Taco de sinuca')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 4.500</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Soco ingles</h1>
+            <div class="image">
+              <img src="https://cdn.discordapp.com/attachments/852628978032050196/859426652277702706/ingles.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('wbody|WEAPON_KNUCKLE',4500,'Soco ingles')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 4.500</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Taco de golf</h1>
+            <div class="image">
+              <img src="https://cdn.discordapp.com/attachments/852628978032050196/859426647509172234/golf.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('wbody|WEAPON_GOLFCLUB',4500,'Taco de golf')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 4.500</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Faca</h1>
+            <div class="image">
+              <img src="https://cdn.discordapp.com/attachments/674987131227078699/764370919002341426/faca.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('wbody|WEAPON_KNIFE',4500,'Faca')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 4.500</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Adaga</h1>
+            <div class="image">
+              <img src="https://cdn.discordapp.com/attachments/852628978032050196/859426618506084423/faca.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('wbody|WEAPON_DAGGER',4500,'Adaga')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 4.500</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Pé de Cabra</h1>
+            <div class="image">
+              <img src="https://cdn.discordapp.com/attachments/674987131227078699/764370880171868161/cabra.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('wbody|WEAPON_CROWBAR',4500,'Pé de Cabra')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 4.500</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Martelo</h1>
+            <div class="image">
+              <img src="https://cdn.discordapp.com/attachments/674987131227078699/764371031401562112/martelo.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('wbody|WEAPON_HAMMER',4500,'Faca')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 4.500</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Chave de Grifo</h1>
+            <div class="image">
+              <img src="https://cdn.discordapp.com/attachments/674987131227078699/764370964489175040/grifo.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('wbody|WEAPON_WRENCH',4500,'Chave de Grifo')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 4.500</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Paraquedas</h1>
+            <div class="image">
+              <img src="https://cdn.discordapp.com/attachments/674987131227078699/764371040137904128/paraquedas.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('wbody|GADGET_PARACHUTE',4500,'Paraquedas')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 4.500</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h1>Machete</h1>
+            <div class="image">
+              <img src="https://cdn.discordapp.com/attachments/852628978032050196/859426660508237864/machete.png">
+            </div>
+            <div class="btnprice">
+              <div class="btn">
+                <button onclick="buy('wbody|WEAPON_MACHETE',4500,'Machete')">COMPRAR</button>
+              </div>
+              <div class="price">
+                <p>$ 4.500</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+  <script src="https://kit.fontawesome.com/b17cbc7c38.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
