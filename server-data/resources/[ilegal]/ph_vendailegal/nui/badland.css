@@ -1,0 +1,399 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    user-select: none;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    position: absolute;
+    width: 5px;
+    height: 1px;
+    left: 10vw;
+    border-radius: 20px;
+    
+}
+
+.qtd {
+    width: 11vw;
+    margin-left: 1.0vw;
+    margin-top: -11vw;
+    color: rgba(255,255,255,0.5);
+}
+
+::-webkit-scrollbar-track {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.0);
+    border-bottom-right-radius: 10px;
+    left: 10vw;
+}
+
+::-webkit-scrollbar-thumb {
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    left: 10vw;
+    
+}
+
+.mainContainer {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 22vw;
+    height: 30vw;
+    border-radius: 0.2vw;
+    background-color: rgba(0,0,0,0.0);
+    transform: translate(-50%,-50%);
+}
+
+.titleContainer {
+    position: absolute;
+    width: 2.0vw;
+    height: 6.5vw;
+    margin-top: 4.0vw;
+    margin-left: -2.0vw;
+    border-radius: 0.7vw 0.0vw 0.0vw 0.7vw;
+    background-color: rgba(0, 0, 0, 0.288);
+}
+
+.titleContainer p {
+    font-family: 'Poppins';
+    margin-top: 3.8vw;
+    font-weight: bold;
+    font-size: 0.9vw;
+    transform: rotate(-90deg);
+    color: rgb(255,255,255,0.8);
+}
+
+.contentContainer {
+    position: absolute;
+    width: 20vw;
+    height: 32vw;
+    top: 4vw;
+	border-radius: 0 0 0.2vw 0.2vw;
+	overflow: auto;
+    background-color: rgba(0, 0, 0, 0.288)
+    
+}
+
+.itemContainer {
+    
+    width: 53.5vw;
+    height: 4.8vw;
+    margin-top: 0.5vw;
+	margin-bottom: 0.5vw;
+    margin-left: 0.75vw;
+    background-color: rgba(99, 99, 99, 0.356);
+    border-radius: 0.2vw;
+}
+
+.itemImage {
+    width: 9.5vw;
+    height: 9.5vw;
+    margin-left: 0.4vw;
+    border-radius: 2.4vw;
+    text-align: center;
+}
+
+.itemImage img {
+    background-size: 6.5vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 0.4vw;
+    margin-left: -5.5vw;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 1.2vw;
+}
+
+.itemTitle {
+    margin-top: -17.5%;
+    margin-left: 19.5%;
+}
+
+.itemTitle span {
+    font-family: Poppins, sans-serif;
+    font-size: 1.4vw;
+    color: rgba(255,255,255,0.65);
+}
+
+.recipeContainer {
+    float: left;
+    width: 9.5vw;
+    height: 1.5vw;
+    margin-left: 5vw;
+    margin-top: -0.3vw;
+    border-radius: 0.2vw;
+    background-color: rgba(0,0,0,0.65);
+	
+}
+
+.recipeContainer span {
+	position: right;
+    font-family: Poppins, sans-serif;
+    line-height: 1.5vw;
+    font-size: 0.8vw;
+	margin-left: 0.5vw;
+    color: rgba(255,255,255,0.8);
+}
+
+.firstRecipeItem img {
+    width: 6vw;
+	height: 6vw;
+}
+
+.secondRecipeItem img {
+    margin-left: 1.1vw;
+    margin-top: 0.6vw;
+    width: 5vw;
+}
+
+.firstImage img {
+	float: left;
+	width: 5vw;
+	
+}
+
+.secondImage img {
+	float: right;
+	width: 3vw;
+	margin-top: 1vw;
+	margin-right: 0.5vw;
+}
+
+.thirdImage img {
+	float: right;
+	width: 3vw;
+	margin-top: 0vw;
+	margin-right: 0.5vw;
+}
+
+
+.fourthImage img {
+	float: right;
+	width: 3vw;
+	margin-top: -1vw;
+	margin-right: 3vw;
+}
+
+
+
+.plusIcon {
+    margin-left: 4.7vw;
+    margin-top: -6vw;
+}
+
+.plusIcon p {
+    font-family: Poppins, sans-serif;
+    font-size: 1.5vw;
+    color: rgba(255,255,255,0.65);
+}
+
+.detailContainer {
+    
+    width: 4.0vw;
+    height: 3.0vw;
+    margin-left: 10.0vw;
+    margin-top: 1.3vw;
+    border-radius: 1.0vw;
+    background-color: rgba(0,0,0,0.65);
+}
+
+.detailContainer img {
+width: 3vw;
+margin-left: 0.5vw;
+margin-top: -0.2vw;
+}
+
+.detailContainer p {
+font-size: 0.5vw;
+margin-left: 3.0vw;
+margin-top: -0.9vw;
+color: rgba(255,255,255,0.65);
+}
+    
+
+.detailsTitle {
+    text-align: center;
+}
+
+.detailContainer span {
+    font-family: Poppins, sans-serif;
+    line-height: 1.5vw;
+    font-size: 0.8vw;
+    color: rgba(255,255,255,0.8);
+}
+
+.detailContainer2 {
+    
+    width: 9.5vw;
+    height: 1.0vw;
+    margin-left: 5.0vw;
+    margin-top: 2.9vw;
+    border-radius: 1.0vw;
+    background-color: rgba(0,0,0,0.65);
+}
+
+.detailContainer2 span {
+    font-family: Poppins, sans-serif;
+    line-height: 1.5vw;
+    font-size: 0.8vw;
+    color: rgba(255,255,255,0.8);
+}
+
+.detailContainer2 img {
+    width: 3vw;
+    margin-left: 0.5vw;
+    margin-top: 0vw;
+}
+
+.detailContainer2 p {
+    font-size: 0.6vw;
+    margin-left: 1.0vw;
+    margin-top: -1.1vw;
+    line-height: 1.0vw;
+    color: rgba(255,255,255,0.65);
+    }
+
+.detailContainer3 {
+    
+    width: 2.0vw;
+    height: 2.0vw;
+    margin-left: 14.3vw;
+    margin-top: -6.0vw;
+    border-radius: 1.0vw;
+    background-color: rgba(0,0,0,0.65);
+}
+
+.detailContainer3 span {
+    font-family: Poppins, sans-serif;
+    line-height: 1.5vw;
+    font-size: 0.8vw;
+    color: rgba(255,255,255,0.8);
+}
+
+.detailContainer3 img {
+    width: 3vw;
+    margin-left: 0.5vw;
+    margin-top: 0vw;
+}
+
+.detailContainer3 p {
+    font-size: 0.5vw;
+    margin-left: 3.0vw;
+    margin-top: -1.0vw;
+    color: rgba(255,255,255,0.65);
+    }
+
+.detailContainer4 {
+    
+    width: 3.4vw;
+    height: 1.0vw;
+    margin-left: 15.0vw;
+    margin-top: 0.1vw;
+    border-radius: 1.0vw;
+    background-color: rgba(0,0,0,0.65);
+}
+
+.detailContainer4 span {
+    font-family: Poppins, sans-serif;
+    line-height: 1.5vw;
+    font-size: 1.0vw;
+    color: rgba(255,255,255,0.8);
+}
+
+.detailContainer4 img {
+    width: 3vw;
+    margin-left: 0.5vw;
+    margin-top: 0vw;
+}
+
+.detailContainer4 p {
+    font-size: 0.6vw;
+    line-height: 1.0vw;
+    margin-left: 0.7vw;
+    margin-top: -1.1vw;
+    color: rgba(255,255,255,0.65);
+    }
+
+.productDetails p {
+    margin-left: 0.5vw;
+    margin-top: 0.90vw;
+    color: rgba(255,255,255,0.65);
+    font-family: Poppins, sans-serif;
+    font-size: 0.75vw;
+    line-height: 1.65vw;
+}
+
+.makeItContainer {
+    width: 17.25vw;
+    height: 9vw;
+    border-radius: 0.2vw;
+    margin-left: 66.5%;
+    margin-top: -9vw;
+    background-color: rgba(0,0,0,0.65);
+}
+
+.makeItTitle {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.makeItTitle span {
+    color: rgba(255,255,255,0.8);
+    line-height: 1.5vw;
+    font-family: Poppins, sans-serif;
+    font-size: 0.9vw;
+}
+
+.productionDetails {
+    margin-top: -7.5vw;
+    margin-left: 1vw;
+}
+
+.productionDetails p {
+    color: rgba(255,255,255,0.65);
+    font-family: Poppins, sans-serif;
+    font-size: 0.8vw;
+    line-height: 1.4vw;
+}
+
+#productButton {
+	
+    width: 3.0vw;
+    margin-top:6.2vw;
+    margin-left: -20.3vw;
+    height: 1.0vw;
+    border-radius: 5px;
+    background-color: rgb(255, 217, 0);
+    transition: 0.25s;
+}
+
+#productButton span {
+    font-family: Poppins, sans-serif;
+    font-size: 0.7vw;
+    color: #000;
+    transition: 0.25s;
+    margin-left: 0.4vw;
+}
+/* .progressBarOut {
+    position: absolute;
+    width: 19.8vw;
+    height: 0.6vw;
+    background-color: rgba(0,0,0,0.5);
+    top: 2.95vw;
+    left: 1vw;
+}
+
+.progressBarIn {
+    height: 100%;
+    width: 0;
+    background-color: rgba(255,255,255,0.5);
+} */

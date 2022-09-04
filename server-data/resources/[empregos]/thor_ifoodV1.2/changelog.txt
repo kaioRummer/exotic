@@ -1,0 +1,24 @@
+
+Aqui são listadas as mudanças dentre cada verssão do script thor iFood. 
+Por favor não altere os créditos de developer: GoMa-13#1704
+
+Obrigado!
+
+========== [Verssão 1.0] ==========
+
+- Script de ifood criado em 05/2021.
+- Pegar encomenda no ponto marcado e entregar no ponto marcado.
+- Gera rota aleatória de entrega sem repetir o último local.
+- O pagamento é feito por server-side.
+- Pagamento random entre X e Y (onde X e Y podem ser alterados facilmente).
+
+========== [Verssão 1.1] ==========
+
+- Script atualizado em 06/2021
+- Blip markers corrigidas. (Agora todas são na frente de alguma porta, e duas são localizadas em interiores(hospital e barbearia)).
+- Adicionada possibilidade de guardar a comida no caixote da moto do ifood (cg160). O nome da moto usada como ifood no server pode ser
+alterado.
+- Comida é ESCONDIDA(apagada) ao entrar em veículo. É criada novamente quando sai.
+- Adicionada animação ao guardar ou pegar encomenda no caixote da moto.
+- Removidos os props aleatórios (objetos de entrega) que ficam voando distantes da mão do PED(player).
+

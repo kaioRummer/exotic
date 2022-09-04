@@ -1,0 +1,471 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    user-select: none;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    position: absolute;
+    width: 5px;
+    height: 1px;
+    left: 10vw;
+    border-radius: 20px;
+    
+}
+
+.qtd {
+    width: 11vw;
+    margin-left: 1.0vw;
+    margin-top: -11vw;
+    color: rgba(255,255,255,0.5);
+}
+
+::-webkit-scrollbar-track {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.0);
+    border-bottom-right-radius: 10px;
+    left: 10vw;
+}
+
+::-webkit-scrollbar-thumb {
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    left: 10vw;
+    
+}
+
+.mainContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20vw;
+    height: 38vw;
+    border-radius: 0.2vw;
+    background-color: rgba(0,0,0,0.0);
+    transform: translate(-50%,-50%);
+}
+
+.titleContainer {
+    position: absolute;
+    width: 2.0vw;
+    height: 7.5vw;
+    margin-top: 4.0vw;
+    margin-left: -2.0vw;
+    border-radius: 0.7vw 0.0vw 0.0vw 0.7vw;
+    background-color: rgba(0, 0, 0, 0.288);
+}
+
+.titleContainer p {
+    font-family: 'Poppins';
+    margin-top: 4.90vw;
+    font-weight: bold;
+    font-size: 0.9vw;
+    transform: rotate(-90deg);
+    color: rgb(255,255,255,0.8);
+}
+
+.bords {
+    position: absolute;
+    width: 0.7vw;
+    height: 21.5vw;
+    margin-top: 4.00vw;
+    margin-left: 20.0vw;
+    border-radius: 0.0vw 0.7vw 0.7vw 0.0vw;
+    background-color: rgba(0, 0, 0, 0.288);
+}
+
+.contentContainer {
+    position: absolute;
+    width: 18.2vw;
+    height: 29vw;
+    top: 4vw;
+	border-radius: 0 0 0.2vw 0.2vw;
+	overflow: auto;
+    background-color: rgba(0, 0, 0, 0.288)
+    
+}
+
+.itemContainer {
+    
+    width: 53.5vw;
+    height: 9.0vw;
+    margin-top: 0.5vw;
+	margin-bottom: 0.5vw;
+    margin-left: 0.75vw;
+    background-color: rgba(99, 99, 99, 0.356);
+    border-radius: 0.2vw;
+}
+
+.itemImage {
+    width: 9.5vw;
+    height: 9.5vw;
+    margin-left: 0.4vw;
+    border-radius: 2.4vw;
+    text-align: center;
+}
+
+.itemImage img {
+    background-size: 6.5vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 0.7vw;
+    width: 7.8vw;
+    height: 7.5vw;
+    border-radius: 0.2vw;
+}
+
+.itemTitle {
+    margin-top: -17.5%;
+    margin-left: 19.5%;
+}
+
+.itemTitle span {
+    font-family: Poppins, sans-serif;
+    font-size: 1.4vw;
+    color: rgba(255,255,255,0.65);
+}
+
+.recipeContainer {
+    width: 7.5vw;
+    height: 1.5vw;
+    margin-left: 12.1vw;
+    margin-top: 2.5vw;
+    border-radius: 0.2vw;
+    background-color: rgba(0,0,0,0.65);
+    transform: rotate(90deg);
+	
+}
+
+.recipeContainer span {
+	position: right;
+    font-family: Poppins, sans-serif;
+    line-height: 1.5vw;
+    font-size: 0.8vw;
+	margin-left: 0.5vw;
+    color: rgba(255,255,255,0.8);
+}
+
+.firstRecipeItem img {
+    width: 6vw;
+	height: 6vw;
+}
+
+.secondRecipeItem img {
+    margin-left: 1.1vw;
+    margin-top: 0.6vw;
+    width: 5vw;
+}
+
+.firstImage img {
+	float: left;
+	width: 5vw;
+	
+}
+
+.secondImage img {
+	float: right;
+	width: 3vw;
+	margin-top: 1vw;
+	margin-right: 0.5vw;
+}
+
+.thirdImage img {
+	float: right;
+	width: 3vw;
+	margin-top: 0vw;
+	margin-right: 0.5vw;
+}
+
+
+.fourthImage img {
+	float: right;
+	width: 3vw;
+	margin-top: -1vw;
+	margin-right: 3vw;
+}
+
+
+
+.plusIcon {
+    margin-left: 4.7vw;
+    margin-top: -6vw;
+}
+
+.plusIcon p {
+    font-family: Poppins, sans-serif;
+    font-size: 1.5vw;
+    color: rgba(255,255,255,0.65);
+}
+
+.detailContainer {
+    
+    width: 2.2vw;
+    height: 2.4vw;
+    margin-left: 9.8vw;
+    margin-top: -2.5vw;
+    border-radius: 0.8vw;
+    background-color: rgba(0,0,0,0.65);
+}
+
+.detailContainer img {
+width: 2.0vw;
+margin-left: 0.1vw;
+margin-top: -0.1vw;
+}
+
+.detailContainer p {
+font-size: 0.5vw;
+margin-left: 0.94vw;
+margin-top: -0.4vw;
+color: rgba(255,255,255,0.65);
+}
+    
+
+.detailsTitle {
+    text-align: center;
+}
+
+.detailContainer span {
+    font-family: Poppins, sans-serif;
+    line-height: 1.5vw;
+    font-size: 0.8vw;
+    color: rgba(255,255,255,0.8);
+}
+
+.detailContainer2 {
+    
+    width: 2.2vw;
+    height: 2.4vw;
+    margin-left: 12.4vw;
+    margin-top: -2.4vw;
+    border-radius: 0.8vw;
+    background-color: rgba(0,0,0,0.65);
+}
+
+.detailContainer2 span {
+    font-family: Poppins, sans-serif;
+    line-height: 1.5vw;
+    font-size: 0.8vw;
+    color: rgba(255,255,255,0.8);
+}
+
+.detailContainer2 img {
+    width: 1.8vw;
+    margin-left: 0.17vw;
+    margin-top: 0.0vw;
+}
+
+.detailContainer2 p {
+    font-size: 0.5vw;
+    margin-left: 0.94vw;
+    margin-top: -0.3vw;
+    color: rgba(255,255,255,0.65);
+}
+
+.detailContainer3 {
+    
+    width: 2.2vw;
+    height: 2.4vw;
+    margin-left: 9.8vw;
+    margin-top: 0.5vw;
+    border-radius: 0.8vw;
+    background-color: rgba(0,0,0,0.65);
+}
+    
+.detailContainer3 span {
+    font-family: Poppins, sans-serif;
+    line-height: 1.5vw;
+    font-size: 0.8vw;
+    color: rgba(255,255,255,0.8);
+}
+    
+.detailContainer3 img {
+    width: 1.8vw;
+    margin-left: 0.2vw;
+    margin-top: 0.0vw;
+}
+    
+.detailContainer3 p {
+    font-size: 0.5vw;
+    margin-left: 0.94vw;
+    margin-top: -0.3vw;
+    color: rgba(255,255,255,0.65);
+}
+
+.detailContainer4 {
+    
+    width: 2.2vw;
+    height: 2.4vw;
+    margin-left: 12.4vw;
+    margin-top: -2.4vw;
+    border-radius: 0.8vw;
+    background-color: rgba(0,0,0,0.65);
+}
+    
+.detailContainer4 span {
+    font-family: Poppins, sans-serif;
+    line-height: 1.5vw;
+    font-size: 0.8vw;
+    color: rgba(255,255,255,0.8);
+}
+    
+.detailContainer4 img {
+    width: 1.8vw;
+    margin-left: 0.2vw;
+    margin-top: 0.0vw;
+}
+    
+.detailContainer4 p {
+    font-size: 0.5vw;
+    margin-left: 0.94vw;
+    margin-top: -0.3vw;
+    color: rgba(255,255,255,0.65);
+}
+
+
+.productDetails p {
+    margin-left: 0.5vw;
+    margin-top: 0.90vw;
+    color: rgba(255,255,255,0.65);
+    font-family: Poppins, sans-serif;
+    font-size: 0.75vw;
+    line-height: 1.65vw;
+}
+
+.makeItContainer {
+    width: 17.25vw;
+    height: 9vw;
+    border-radius: 0.2vw;
+    margin-left: 66.5%;
+    margin-top: -9vw;
+    background-color: rgba(0,0,0,0.65);
+}
+
+.makeItTitle {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.makeItTitle span {
+    color: rgba(255,255,255,0.8);
+    line-height: 1.5vw;
+    font-family: Poppins, sans-serif;
+    font-size: 0.9vw;
+}
+
+.productionDetails {
+    margin-top: -7.5vw;
+    margin-left: 1vw;
+}
+
+.productionDetails p {
+    color: rgba(255,255,255,0.65);
+    font-family: Poppins, sans-serif;
+    font-size: 0.8vw;
+    line-height: 1.4vw;
+}
+
+#productButton {
+	
+    width: 0vw;
+    margin-top:1.0vw;
+    margin-left: -20.3vw;
+    height: 0vw;
+    border-radius: 5px;
+    background-color: rgb(255, 217, 0);
+    transition: 0.25s;
+}
+
+#productButton span {
+    font-family: Poppins, sans-serif;
+    font-size: 0.7vw;
+    color: #000;
+    transition: 0.25s;
+    margin-left: 0.4vw;
+}
+
+#productButton2 {
+	
+    width: 4.1vw;
+    margin-top:1.6vw;
+    margin-left: -25.4vw;
+    height: 1.0vw;
+    border-radius: 8px;
+    background-color: rgb(255, 217, 0);
+    transition: 0.25s;
+    position: absolute;
+}
+
+#productButton2 span {
+    font-family: Poppins, sans-serif;
+    font-size: 0.7vw;
+    color: #000;
+    transition: 0.25s;
+    margin-left: 0.4vw;
+    position: absolute;
+}
+
+#productButton3 {
+	
+    width: 4.6vw;
+    margin-top:5.7vw;
+    margin-left: -25.5vw;
+    height: 1.0vw;
+    border-radius: 8px;
+    background-color: rgb(255, 217, 0);
+    transition: 0.25s;
+}
+
+#productButton3 span {
+    font-family: Poppins, sans-serif;
+    font-size: 0.7vw;
+    color: #000;
+    transition: 0.25s;
+    margin-left: 0.4vw;
+}
+
+#productButton4 {
+	
+    width: 4.6vw;
+    margin-top:0.5vw;
+    margin-left: -25.6vw;
+    height: 0.9vw;
+    border-radius: 8px;
+    background-color: rgb(255, 217, 0);
+    transition: 0.25s;
+}
+
+#productButton4 span {
+    font-family: Poppins, sans-serif;
+    font-size: 0.7vw;
+    color: #000;
+    transition: 0.25s;
+    margin-left: 0.4vw;
+}
+
+#productButton5 {
+	
+    width: 4.6vw;
+    margin-top:-0.9vw;
+    margin-left: -20vw;
+    height: 1.0vw;
+    border-radius: 8px;
+    background-color: rgb(255, 217, 0);
+    transition: 0.25s;
+}
+
+#productButton5 span {
+    font-family: Poppins, sans-serif;
+    font-size: 0.7vw;
+    color: #000;
+    transition: 0.25s;
+    margin-left: 0.4vw;
+}

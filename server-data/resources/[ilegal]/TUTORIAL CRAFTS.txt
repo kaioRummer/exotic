@@ -1,0 +1,40 @@
+--> CHAMA PV SE PRECISAR DE AJUDA:  PH#3989
+--> TUDO 100% FUNCIONANDO E TESTADO
+--> OBRIGADO POR ADQUIRIR
+
+
+TUTORIAL 01: STARTA TODAS AS PASTAS NO SEU SERVIDOR:
+
+start ph_coletefac
+start ph_desmanche
+start ph_drogavende
+start ph_drogefac
+start ph_drogifac
+start ph_drogmfac
+start ph_gunsfac
+start ph_lavagem
+start ph_munifac
+start ph_rotas
+start ph_vendailegal
+
+
+TUTORIAL 02: EM CLIENT-SITE (CLIENTE.LUA)
+COLOQUE A CDS DO LOCAL EM QUE QUER COLOCAR O BLIP DE CRAFT!
+['x'] = 715.96, ['y'] = -962.43, ['z'] = 30.4
+
+
+TUTORIAL 03: NO ARQUIVO (PH.LUA) PODE MUDAR A QUANTIDADE DE INTENS USADO PARA O CRAFT (OPCIONAL) NÃO ESQUECE DE MUDAR EM NUI (INDEX.PHP) TAMBÉM!
+
+
+TUTORIAL 04: NO FINAL DO MESMO ARQUIVO (PH.LUA) COLOQUE O GROUP DAS FACÇÃOS QUE VAI ACESSAR O BLIP
+
+
+TUTORIAL 05: ADICIONE OS ITENS NA SUA BASE: 
+(couro) (linha) (aco) (tesoura) (aluminio) (chave) (furadeira) (plastico) (chip) (cobre) (cordas)
+(co2) (tinta) (amido) (composto) (embalagem) (folhasdecoca) (saquinhos) (balanca) (folhasmaconha) 
+(corpopistol) (placa-metal) (gatilho) (molas) (corposub) (corporifle) (notafiscalfalsa) (polvora)
+(ferro) (capsula) (colete) (algema) (pendrive) (capuz) (cartao) (placa) (masterpick) (nitro) 
+(lsdembalado) (lsd) (cocaina) (cocaembalada) (tablete) (maconha) (dinheirosujo)
+
+
+OBS: SE NÃO CONSEGUIR CONFIGURAR O (PH_ROTAS) OU (PH_DROGAVENDE) ENTRE EM CONTATO!!
